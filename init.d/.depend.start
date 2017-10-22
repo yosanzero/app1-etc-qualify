@@ -1,0 +1,17 @@
+TARGETS = rsyslog uuidd killprocs nginx fail2ban irqbalance single ntp acpid rsync cron dbus anacron ssh plymouth ondemand rc.local grub-common
+INTERACTIVE =
+nginx: rsyslog
+fail2ban: rsyslog
+irqbalance: rsyslog
+single: killprocs
+ntp: rsyslog
+acpid: rsyslog
+rsync: rsyslog
+cron: rsyslog
+dbus: rsyslog
+anacron: rsyslog
+ssh: rsyslog
+plymouth: nginx rsyslog fail2ban uuidd irqbalance ntp acpid rsync cron dbus anacron ssh
+ondemand: nginx rsyslog fail2ban uuidd irqbalance ntp acpid rsync cron dbus anacron ssh
+rc.local: nginx rsyslog fail2ban uuidd irqbalance ntp acpid rsync cron dbus anacron ssh
+grub-common: nginx rsyslog fail2ban uuidd irqbalance ntp acpid rsync cron dbus anacron ssh

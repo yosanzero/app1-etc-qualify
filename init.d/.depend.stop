@@ -1,0 +1,11 @@
+TARGETS = mysql uuidd nginx fail2ban irqbalance resolvconf ntp plymouth urandom sendsigs ufw rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: nginx fail2ban uuidd irqbalance mysql plymouth
+ufw: fail2ban
+rsyslog: nginx fail2ban irqbalance sendsigs mysql ntp
+umountnfs.sh: nginx fail2ban uuidd irqbalance rsyslog sendsigs mysql plymouth
+hwclock.sh: uuidd rsyslog mysql
+networking: nginx fail2ban umountnfs.sh mysql
+umountfs: nginx networking fail2ban urandom uuidd irqbalance umountnfs.sh resolvconf mysql hwclock.sh plymouth
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

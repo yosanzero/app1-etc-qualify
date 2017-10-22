@@ -1,0 +1,7 @@
+#!/bin/sh -e
+test -f /etc/ssh/ssh_host_dsa_key || dpkg-reconfigure openssh-server
+
+
+# sacloud startup
+/root/.sacloud-api/startup.sh
+# /sacloud startup
