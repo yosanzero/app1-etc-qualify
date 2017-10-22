@@ -10,3 +10,4 @@ UUID=a2a10955-79f4-42f8-ba87-f46db931001d /               ext4    errors=remount
 # swap was on /dev/vda2 during installation
 UUID=6e2acd48-51d0-4d4e-8208-41ed378647df none            swap    sw              0       0
 /dev/fd0        /media/floppy0  auto    rw,user,noauto,exec,utf8 0       0
+192.168.101.1:/home/isucon/isubata/webapp/public/icons /home/isucon/isubata/webapp/public/icons nfs defaults 0 0

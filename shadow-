@@ -29,3 +29,5 @@ sshd:*:17435:0:99999:7:::
 ubuntu:$6$Bfamw5Qn$TngiWcJEWeliNPzyvBkNPj2r/cvl.lqkv3NVDxKdZH0/o0w.sCCIg3wWe6kLgIzCpD/9CgkzGJs815JKFgnIu0:17458:0:99999:7:::
 isucon:$6$y2rPfjPI$pea6Ke5IvK5heDX2H3/DIQmsqFAJ0wiQ5feFiz.QUUFqlmjRHU5t3lYTqTl9sJEfGceW0zElnULGBxX7EqlH5/:17460:0:99999:7:::
 mysql:!:17454:0:99999:7:::
+netdata:!:17461::::::
+statd:*:17461:0:99999:7:::
